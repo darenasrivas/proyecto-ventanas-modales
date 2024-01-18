@@ -16,3 +16,11 @@ const closeModal = function () {
   modal.classList.add('hidden')
   overlay.classList.add('hidden')
 }
+
+// Asociar un listener a cada botón para abrir y cerrar el modal:
+
+for (let i = 0; i < btnsOpenModal.length; i++) {
+  btnsOpenModal[i].addEventListener('click', openModal)
+  btnCloseModal.addEventListener('click', closeModal)
+  overlay.addEventListener('click', closeModal)
+}
