@@ -24,3 +24,12 @@ for (let i = 0; i < btnsOpenModal.length; i++) {
   btnCloseModal.addEventListener('click', closeModal)
   overlay.addEventListener('click', closeModal)
 }
+
+// Cerrar el modal de una tercera forma, pulsando la tecla  ESC
+
+document.addEventListener('keydown', function (e) {
+  // console.log(e, e.key);
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+    closeModal()
+  }
+})
