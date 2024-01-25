@@ -5,7 +5,8 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "rsync -av -e 'ssh -p 22123' ./ david@david.certweb.infenlaces.com:/home/david/david_siproxy/"
+    "deploy": "rsync -av -e 'ssh -p 22123' ./ david@david.certweb.infenlaces.com:/home/david/david_siproxy/",
+    "build": "npm i minify -g"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
