@@ -1,5 +1,9 @@
 # proyecto-ventanas-modales
 
+-Enlace para visualizar: https://david.certweb.infenlaces.com/
+
+-Acciones realizadas:
+
 - Fork del repositorio
 - git clone para tenerlo en local
 - Añadimos el proyecto dentro de gitKraken
