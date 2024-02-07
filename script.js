@@ -1,11 +1,11 @@
-// Nos referimos a los elementos para poder cambiar sus clases
+// Nos referimos a los elementos para poder cambiar sus clases:
 
 const modal = document.querySelector('.modal')
 const overlay = document.querySelector('.overlay')
 const btnCloseModal = document.querySelector('.close-modal')
 const btnsOpenModal = document.querySelectorAll('.show-modal')
 
-// Funciones
+// Funciones de apertura y cerrar las ventanas modales:
 
 const openModal = function () {
   modal.classList.remove('hidden')
@@ -17,7 +17,7 @@ const closeModal = function () {
   overlay.classList.add('hidden')
 }
 
-// Asociar un listener a cada botón para abrir y cerrar el modal:
+// Asociar un listener a cada botón para abrir y cerrar la ventana modal:
 
 for (let i = 0; i < btnsOpenModal.length; i++) {
   btnsOpenModal[i].addEventListener('click', openModal)
@@ -25,7 +25,7 @@ for (let i = 0; i < btnsOpenModal.length; i++) {
   overlay.addEventListener('click', closeModal)
 }
 
-// Cerrar el modal de una tercera forma, pulsando la tecla  ESC
+// Cerrar la ventanta modal de una tercera forma, pulsando la tecla  ESC
 
 document.addEventListener('keydown', function (e) {
   // console.log(e, e.key);
